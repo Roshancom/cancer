@@ -1,0 +1,35 @@
+.sec-2 {
+  background-color: $bg-gray;
+  .features-wrapper {
+    text-align: center;
+    width: 768px;
+    margin: auto;
+    @include mobile {
+      width: auto;
+    }
+    .h4 {
+      margin-bottom: 0;
+      padding-top: 1.3rem;
+      color: $primary-color;
+      @include mobile {
+        text-align: center;
+        font-size: 14px;
+      }
+    }
+    .h2 {
+      margin: 0;
+      @include mobile {
+        font-size: 1.7rem;
+        text-align: center;
+      }
+    }
+    .ph-sm {
+      font-size: 1.3rem;
+      font-weight: 400;
+      @include mobile {
+        line-height: 28px;
+        text-align: center;
+      }
+    }
+  }
+}

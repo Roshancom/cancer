@@ -1,0 +1,148 @@
+.sec-1 {
+  background-color: $base-white;
+  .col-fx {
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .content-wrapper {
+      max-width: 768px;
+      h1 {
+        margin-top: 0;
+        font-size: 3.7rem;
+        line-height: 72px;
+        @include mobile {
+          font-size: 1.8rem;
+          line-height: 44px;
+        }
+      }
+      .ph-sm {
+        font-size: 1.3rem;
+      }
+    }
+
+    .content {
+      display: flex;
+      @include mobile {
+        flex-direction: column-reverse;
+      }
+      .check-item-wrapper {
+        margin-left: 50px;
+        @include mobile {
+          margin-left: 0;
+        }
+        .check-item {
+          display: flex;
+          align-items: center;
+          @include mobile {
+            margin: 10px auto;
+            align-items: normal;
+          }
+        }
+      }
+
+      .form-wrapper {
+        @include mobile {
+          order: 3;
+        }
+
+        form {
+          display: flex;
+          @include mobile {
+            display: block;
+          }
+          input {
+            width: 360px;
+            height: 48px;
+            background: $base-white;
+            border: 1px solid $prim-bord;
+            box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+            border-radius: 8px;
+            padding-left: 15px;
+            letter-spacing: 1px;
+            @include mobile {
+              margin-top: 15px;
+              width: 95%;
+              border-radius: 5px;
+              padding-left: 10px;
+            }
+          }
+        }
+
+        .text {
+          @include mobile {
+            &:before {
+              content: "We care about your data in our ";
+              font-size: 0.7rem;
+            }
+            a:before {
+              content: "Privacy policy.";
+            }
+          }
+        }
+        button {
+          width: 129px;
+          height: 48px;
+          background: $primary-color;
+          border: 1px solid $primary-color;
+          box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+          border-radius: 8px;
+          margin-left: 15px;
+          letter-spacing: 1px;
+
+          @include mobile {
+            width: 100%;
+            border-radius: 5px;
+            text-align: center;
+            margin-left: 0;
+          }
+        }
+      }
+
+      .close {
+        @include mobile {
+          margin: 0;
+          display: none;
+        }
+      }
+    }
+  }
+
+  .credit-card-wrapper {
+    margin: 30px 0;
+  }
+
+  .text-wrapper {
+    text-align: center;
+
+    .sponsor-wrapper {
+      display: flex;
+      justify-content: space-evenly;
+      @include mobile {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+      .sponsor {
+        display: flex;
+        align-items: center;
+        @include mobile {
+          align-items: center;
+          flex: 0 0 50%;
+        }
+        img {
+          @include mobile {
+            width: 30px;
+            height: 30px;
+          }
+        }
+        h2 {
+          @include mobile {
+            font-size: 1rem;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}

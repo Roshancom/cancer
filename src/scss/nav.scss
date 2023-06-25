@@ -1,0 +1,126 @@
+
+
+
+// header
+.header-col {
+    display: flex;
+    justify-content: space-evenly;
+
+  .logo-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 0 0 20%;   
+
+    @include mobile{
+      flex: 0 0 100%;
+      justify-content: flex-start;
+    }
+
+    img{
+      margin-right: 15px;
+      @include mobile{
+        width: 35px;
+        height: 30px;
+      }
+    }
+
+    h3{
+
+      @include mobile{
+        
+        font-size: .9rem;
+        margin-left: 10px;
+      }
+    }
+
+  }
+  nav {
+    flex: 0 0 60%;
+    @include mobile{
+      display: none;
+    }
+    ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;    
+    height: 60%;
+    
+    li{
+      cursor: pointer;
+      // position: relative;
+      // &:hover{
+      //   > .submenu{
+      //     height: auto;
+      //     opacity: 1;
+      //     transition: all 300ms ease-in;
+      //   }
+      // }
+    }
+    a {
+      text-decoration: none;
+      color: $paragraph-color;
+      padding-left: 1.5rem;
+    }
+  }
+  }
+  .btn-wrapper {
+    flex: 0 0 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @include mobile{
+      display: none;
+    }
+
+    .base-white{
+      background-color: white;
+    border: none;
+    color: #475467;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    }
+    
+    .primary{
+      width: 95px;
+      height: 44px;
+      background: #7F56D9;
+      border: 1px solid #7F56D9;
+      box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      letter-spacing: .5px;
+    }
+  }
+  
+  // header
+  
+  
+  .submenu{
+    display: flex;
+    height: auto;
+    background: white;
+    border: 1px solid #ccc;
+    flex-direction: column;
+    padding: 10px;
+    position: absolute;
+    border-radius: 0 5px;
+    margin-left: 20px; 
+    }
+
+  .hamburger-menu{
+    display: none;
+    @include mobile{
+      position: absolute;
+      z-index: 2;
+      top: 10px;
+      right: 10px;
+      display: flex;
+      align-items: center;
+    }
+  }
+}

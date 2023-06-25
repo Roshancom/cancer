@@ -1,0 +1,37 @@
+// $colums :(
+//   (col-12,100%),
+//   (col-6,50%),
+//   (col-4,33.33%),
+//   (col-3,25%),
+//   (col-2,16.66%)
+//   );
+
+
+//   @each $name, $size in $colums{
+//     .#{$name}{
+//       max-width: $size;
+//       flex: 0 0 $size;
+//     }
+//   }
+  
+
+.col {
+  &-12 {
+    max-width: 100%;
+    flex: 0 0 100%;  
+  }
+  &-6 {
+    max-width: 50%;
+    flex: 0 0 50%;
+
+    @include mobile {
+      max-width: 100%;
+      flex: 0 0 100%;
+    }
+  }
+
+  &-4 {
+    max-width: 33.33%;
+    flex: 0 0 33.33%;
+  }
+}
