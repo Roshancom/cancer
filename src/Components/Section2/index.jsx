@@ -1,5 +1,4 @@
 import Features from "./Features";
-import Cards from "./Cards";
 
 const Section2 = () => {
   return (
@@ -8,9 +7,6 @@ const Section2 = () => {
         <div className="row">
           <div className="col-12">
             <Features />
-          </div>
-          <div className="col-12">
-            <Cards />
           </div>
         </div>
       </div>

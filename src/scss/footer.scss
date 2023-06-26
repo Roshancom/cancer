@@ -104,8 +104,16 @@ footer {
       }
     }
     .text-wrapper {
-    @include align-center;
-    }
+      display: flex;
+      align-items: center;
+      p{
+        @include mobile{
+          
+          font-size: .9rem;
+        };
+      }
+      }
+    
   }
   .fx {
     justify-content: space-evenly;

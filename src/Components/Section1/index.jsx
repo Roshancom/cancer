@@ -3,26 +3,7 @@ import Form from "../ReuseForm";
 import Img from "../Image";
 import Paragraph from "../Paragraph";
 
-const checkItems = [
-  {
-    width: "10",
-    height: "10",
-    class: "ph-sm check-ph",
-    paragraph: "Instantly issue virtual corporate cards",
-  },
-  {
-    width: "10",
-    height: "10",
-    class: "ph-sm check-ph",
-    paragraph: "Control spending before it happens",
-  },
-  {
-    width: "10",
-    height: "10",
-    class: "ph-sm check-ph",
-    paragraph: "Automate your expense Management",
-  },
-];
+
 
 const inputs = [
   {
@@ -85,10 +66,13 @@ const Section1 = () => {
         <div className="row">
           <div className="col-12 col-fx">
             <div className="content-wrapper">
-              <h1>Simple, transparent business credit cards</h1>
+              <h1>
+                You can be a victim of cancer, or a survivor of cancer. It's a
+                mindset
+              </h1>
               <Paragraph
                 className="ph-sm"
-                paragraph="Mo money, no problems untitled is a next generation financial technology company in the process of reinventing banking. 30-day free trial."
+                paragraph="One day at a time, one step at a time. Do what you can, do your best. Let God handle the rest."
               />
             </div>
             <div className="content">
@@ -107,27 +91,6 @@ const Section1 = () => {
                   url="#privacy"
                 />
               </div>
-
-              <div className="check-item-wrapper">
-                {checkItems.map((item, i) => {
-                  return (
-                    <div className="check-item" key={i}>
-                      <div className="check">
-                        <Img
-                          className="check-img"
-                          src="./Assets/Image/check.jpg"
-                          width="15"
-                          height="15"
-                        />
-                      </div>
-                      <Paragraph
-                        className={item.class}
-                        paragraph={item.paragraph}
-                      />
-                    </div>
-                  );
-                })}
-              </div>
             </div>
           </div>
         </div>
@@ -135,7 +98,7 @@ const Section1 = () => {
           <div className="col-12">
             <div className="credit-card-wrapper">
               <Img
-                src="./Assets/Image/credit-card.jpg"
+                src="./Assets/Image/banner.png"
                 alt="Credit Card Picture"
                 width="100%"
                 height="100%"
@@ -148,7 +111,7 @@ const Section1 = () => {
             <div className="text-wrapper">
               <Paragraph
                 className="ph-sm"
-                paragraph="Join 4,000+ Companies already growing"
+                paragraph="4,000+ people already Join"
               />
               <div className="sponsor-wrapper">
                 {sponsors.map((sponsor, i) => {

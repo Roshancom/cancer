@@ -77,11 +77,11 @@ const Footer = () => {
             <div className="msg-wrapper">
               <SubTitle
                 className="mg-top"
-                subHeading="Start growing with Untitled"
+                subHeading="Connect with health care"
               />
               <Paragraph
                 className="ph-sm"
-                paragraph="Join over 4,000+ startups already growing with Untitled."
+                paragraph="Over 4,000+ startups already Join with health care."
               />
               <div className="btn-wrapper">
                 {buttons.map((button) => (
@@ -176,7 +176,7 @@ const Footer = () => {
                 &#169;
                 <Paragraph
                   className="ph-sm"
-                  paragraph="2077 Untitled UI. All rights reserved."
+                  paragraph="2080 Health Care. All rights reserved."
                 />
               </div>
             </div>

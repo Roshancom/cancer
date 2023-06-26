@@ -14,7 +14,7 @@
         line-height: 72px;
         @include mobile {
           font-size: 1.8rem;
-          line-height: 44px;
+          line-height: 30px;
         }
       }
       .ph-sm {
@@ -90,6 +90,7 @@
           border-radius: 8px;
           margin-left: 15px;
           letter-spacing: 1px;
+          cursor: pointer;
 
           @include mobile {
             width: 100%;
@@ -111,6 +112,11 @@
 
   .credit-card-wrapper {
     margin: 30px 0;
+    img{
+      @include mobile{
+        height: 50vh;
+      }
+    }
   }
 
   .text-wrapper {

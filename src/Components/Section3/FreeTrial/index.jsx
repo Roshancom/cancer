@@ -15,7 +15,7 @@ const titles = [
   },
   {
     class: "ph-sm",
-    Paragraph: "Join over 4,000+ startups already growing with untitled.",
+    Paragraph: "Over 4,000+ people already Join with Health care.",
     id: 2,
   },
 ];

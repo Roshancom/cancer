@@ -11,7 +11,7 @@ const Logo = () => {
           width="50"
           height="50"
         />
-        <SubTitle className="h2" subHeading="Untitled UI" />
+        <SubTitle className="h2" subHeading="Health Care" />
       </div>
     </>
   );

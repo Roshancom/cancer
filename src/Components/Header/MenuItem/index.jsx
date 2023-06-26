@@ -3,25 +3,25 @@ import React from "react";
 const menuList = [
   { title: "Home", url: "home", class: "home" },
   {
-    title: "Products",
-    url: "product",
-    class: "product",
+    title: "Type of cancers",
+    url: "/cancer",
+    class: "cancer",
     subMenu: [
-      { title: "Product1", url: "Product1" },
-      { title: "Product2", url: "Product2" },
-      { title: "Product3", url: "Product3" },
+      { title: "Cancer1", url: "Cancer1" },
+      { title: "Cancer2", url: "Cancer2" },
+      { title: "Cancer3", url: "Cancer3" },
     ],
   },
   {
-    title: "Resources",
-    url: "resources",
-    class: "resources",
+    title: "Other Disease",
+    url: "disease",
+    class: "disease",
     subMenu: [
-      { title: "Resource1", url: "Resource1" },
-      { title: "Resource2", url: "Resource2" },
+      { title: "Disease1", url: "Disease1" },
+      { title: "Disease2", url: "Disease2" },
     ],
   },
-  { title: "Pricing", url: "prising", class: "Pricing" },
+  { title: "Contact Us", url: "contact", class: "Contact" },
 ];
 
 const initialState = {

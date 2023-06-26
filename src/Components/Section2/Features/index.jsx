@@ -1,11 +1,11 @@
 import Paragraph from "../../Paragraph";
 
 const featuresText = [
-  { title: "Features", class: "h4" },
-  { title: "All-in-one finance for any business", class: "h2" },
+  { title: "CANCER SERVICES", class: "h4" },
+  { title: "All-in-one cancer services", class: "h2" },
   {
     title:
-      "Get a deposit account,credit card,and spend management software--in one refreshingly easy solution.No fees or Minimums.",
+      "Health care offers comprehensive care for individuals facing a diagnosis of cancer. Our multidisciplinary team of physicians and clinical professionals is committed to medical excellence, combining stringent clinical standards with educational support resources to meet the physical and emotional needs of patients. This commitment has resulted in the cancer program receiving accreditation from the American College of Radiology and the Commission on Cancer of the American College of Surgeons.",
     class: "ph-sm",
   },
 ];

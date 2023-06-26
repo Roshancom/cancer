@@ -4,7 +4,7 @@ import SubTitle from "../../SubTitle";
 
 const texts = [
   {paragraph:"Amelie Lauren", class:"h4"},
-  {paragraph:"Finance Manager,Sisyphus", class:"ph-sm"}
+  {paragraph:"Finance Manager,Health care", class:"ph-sm"}
 ]
 
 const Message = () => {
@@ -13,21 +13,22 @@ const Message = () => {
       <div className="msg-wrapper">
        <div className="msg">
        <Img
-          src="./Assets/Image/boltshift.avif"
-          alt="boltshift picture"
+          className="half-round"
+          src="./Assets/Image/logo.webp"
+          alt="health care  logo"
           width="40"
-          height="30"
+          height="40"
         />
 
         <SubTitle  
         className="h4" 
-        subHeading="Sisyphus" 
+        subHeading="Health care" 
         />
        </div>
  
         <Paragraph
           className="h2"
-          paragraph="We've been able to scale faster by combining our deposits, spend and controls in one account."
+          paragraph="We've been able to scale faster by combining our communities, exprience and experties."
         />
       </div>
       <article>
