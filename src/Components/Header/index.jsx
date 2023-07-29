@@ -12,12 +12,9 @@ const buttons = [
 
 const Navigation = () => {
   const [menuStatus, setMenuStatus] = React.useState(false);
-
-  if (menuStatus) {
-    document.body.style.overflow = "hidden";
-  } else {
-    document.body.style.overflow = "visible";
-  }
+  const handleClick = () => {
+    setMenuStatus((prev) => !prev);   
+  };
 
   return (
     <>
@@ -44,8 +41,8 @@ const Navigation = () => {
                   src="./Assets/Image/hamburgerMenu.png"
                   width="30"
                   height="30"
-                  setMenuStatus={setMenuStatus}
-                  status={menuStatus}                  
+                  onClick={handleClick}
+                  status={menuStatus}
                 />
               </div>
               {menuStatus ? <HamburgerMenu /> : null}

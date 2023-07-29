@@ -22,7 +22,7 @@ const Form = ({ inputs, skin, id, type, name }) => {
   return (
     <form onSubmit={handleSubmit}>
       {inputs.map((input) => (
-        <div key={input.id}>
+        <div className="wrapper" key={input.id}>
           {input.label ? (
             <label forhtml={input.id}>{input.name} :</label>
           ) : null}
@@ -36,6 +36,7 @@ const Form = ({ inputs, skin, id, type, name }) => {
             onChange={handleChange}
             placeholder={input.placeholder}
           />
+          {input.icon ? <div className="icon">{input.icon}</div> : null}
         </div>
       ))}
       {screenSize < 600 ? (
@@ -44,9 +45,11 @@ const Form = ({ inputs, skin, id, type, name }) => {
         </p>
       ) : null}
 
-      <button type={type} id={id} className={skin}>
-        {name}
-      </button>
+      {name ? (
+        <button type={type} id={id} className={skin}>
+          {name}
+        </button>
+      ) : null}
     </form>
   );
 };

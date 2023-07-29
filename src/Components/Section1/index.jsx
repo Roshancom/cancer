@@ -3,8 +3,6 @@ import Form from "../ReuseForm";
 import Img from "../Image";
 import Paragraph from "../Paragraph";
 
-
-
 const inputs = [
   {
     class: "",
@@ -15,50 +13,6 @@ const inputs = [
   },
 ];
 
-const sponsors = [
-  {
-    src: "./Assets/Image/boltshift.avif",
-    alt: "Picture",
-    width: "50",
-    height: "50",
-    company: "Boltshift",
-  },
-  {
-    src: "./Assets/Image/lightbox.png",
-    alt: "Picture",
-    width: "50",
-    height: "50",
-    company: "Lightbox",
-  },
-  {
-    src: "./Assets/Image/featherDev.jpg",
-    alt: "Picture",
-    width: "50",
-    height: "50",
-    company: "FeatherDev",
-  },
-  {
-    src: "./Assets/Image/spherule.png",
-    alt: "Picture",
-    width: "50",
-    height: "50",
-    company: "Spherule",
-  },
-  {
-    src: "./Assets/Image/globalBank.png",
-    alt: "Picture",
-    width: "50",
-    height: "50",
-    company: "GlobalBank",
-  },
-  {
-    src: "./Assets/Image/nietzsche.png",
-    alt: "Picture",
-    width: "50",
-    height: "50",
-    company: "Nietzsche",
-  },
-];
 const Section1 = () => {
   return (
     <section className="sec-1">
@@ -103,31 +57,6 @@ const Section1 = () => {
                 width="100%"
                 height="100%"
               />
-            </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-12">
-            <div className="text-wrapper">
-              <Paragraph
-                className="ph-sm"
-                paragraph="4,000+ people already Join"
-              />
-              <div className="sponsor-wrapper">
-                {sponsors.map((sponsor, i) => {
-                  return (
-                    <div className="sponsor" key={i}>
-                      <Img
-                        src={sponsor.src}
-                        alt={sponsor.alt}
-                        width={sponsor.width}
-                        height={sponsor.height}
-                      />
-                      <h2>{sponsor.company}</h2>
-                    </div>
-                  );
-                })}
-              </div>
             </div>
           </div>
         </div>

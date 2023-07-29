@@ -1,9 +1,7 @@
 import React from "react";
 
-const Img = ({ className, src, alt, width, height, setMenuStatus }) => {
-  const handleClick = () => {
-    setMenuStatus((prev) => !prev);   
-  };
+const Img = ({ className, src, alt, width, height, onClick }) => {
+ 
   return (
     <img
       className={className ? className : null}
@@ -11,7 +9,7 @@ const Img = ({ className, src, alt, width, height, setMenuStatus }) => {
       alt={alt}
       width={width}
       height={height}
-      onClick={handleClick}
+      onClick={onClick}
     />
   );
 };

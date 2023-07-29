@@ -69,9 +69,9 @@ footer {
     }
     .h4 {
       height: 20px;
-      font-size: 0.9rem;
       color: $link-heading;
       font-weight: 600;
+      font-size: 2rem;
       margin: 20px 0;
     }
 
@@ -79,7 +79,6 @@ footer {
       a {
         text-decoration: none;
         color: $paragraph-color;
-        font-size: 1rem;
         font-weight: 600;
       }
     }

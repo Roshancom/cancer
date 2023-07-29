@@ -2,24 +2,21 @@ import Button from "../../Button";
 import Paragraph from "../../Paragraph";
 
 const buttons = [
-  { name: "Learn More", class: "primary", id: 1, type: "button" },
-  { name: "Get Started", class: "secondary", id: 2, type: "button" },
+  { name: "Ask question", class: "primary", id: 1, type: "button" },
 ];
 const titles = [
   {
     class: "h3",
-    Paragraph: "Start your",
-    span: "30-day",
-    back: "free trial",
+    Paragraph: "Check your health condition",
     id: 1,
   },
-  {
-    class: "ph-sm",
-    Paragraph: "Over 4,000+ people already Join with Health care.",
-    id: 2,
-  },
 ];
-const FreeTrial = () => {
+const FreeTrial = ({setIsModule}) => {
+
+  const handleClick = (e)=>{
+    console.log(e,"click")
+    setIsModule(true)
+  }
   return (
     <>
       <div className="trial">
@@ -29,8 +26,6 @@ const FreeTrial = () => {
               key={title.id}
               className={title.class}
               paragraph={title.Paragraph}
-              span={title.span}
-              back={title.back}
             />
           );
         })}
@@ -44,10 +39,12 @@ const FreeTrial = () => {
               type={button.type}
               id={button.id}
               title={button.name}
+              onClick={handleClick}
             />
           );
         })}
       </div>
+    
     </>
   );
 };

@@ -61,6 +61,7 @@
     a {
       text-decoration: none;
       color: $paragraph-color;
+      font-size: 1.5rem;
       padding-left: 1.5rem;
     }
   }
@@ -75,13 +76,16 @@
     }
 
     .base-white{
-      background-color: white;
-    border: none;
-    color: #475467;
-    font-size: 1rem;
-    letter-spacing: 1px;
-    font-weight: 600;
-    cursor: pointer;
+      width: 95px;
+      height: 44px;
+      background: $base-white;
+      border: 1px solid $prim-bord;
+      box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+      border-radius: 8px;
+      font-size: 1.4rem;
+      display: block;
+      color: $text-color;
+      cursor: pointer;
     }
     
     .primary{
@@ -92,7 +96,7 @@
       box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
       border-radius: 8px;
       cursor: pointer;
-      font-size: 1rem;
+      font-size: 1.4rem;
       letter-spacing: .5px;
     }
   }

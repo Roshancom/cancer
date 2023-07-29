@@ -1,0 +1,54 @@
+.module {
+  .background {
+    .main-content {
+      .header{
+        .module-heading{
+          color: white;
+          text-align: center;
+        }
+      }
+      padding: 20px;
+      max-width: 50%;
+      margin: auto;
+      background-color: #333;
+      min-height: 50vh;
+      border-radius: 10px;
+      box-shadow: 2px 2px 4px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .ask-question {
+        form {
+          .wrapper{
+            display: flex;
+            input {
+              width: 100%;
+              height: 40px;
+              border-radius: 10px 0 0 10px;
+              outline: none;
+              padding-left: 20px;
+              font-size: 1.6rem;
+              border: none;
+            }
+            .icon {
+              width: 30px;
+              height: 42px;
+              background-color: white;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 0 10px 10px 0;
+              border: 0px solid;
+              outline: unset;
+              svg{
+                font-size: 1.6rem;
+                margin-right: 5px;
+              }
+            }
+          }
+          
+        }
+      }
+    }
+  }
+}
